@@ -1,0 +1,35 @@
+🚨 QUAN TRỌNG: TẠO REPOSITORY TRƯỚC KHI PUSH
+
+🔧 BƯỚC 1: Tạo Repository trên GitHub
+=====================================
+1. Vào: https://github.com/new
+2. Repository name: github-activity-bot
+3. Description: GitHub Activity Bot - Auto commit generator
+4. Chọn Public
+5. KHÔNG tick "Add a README file"
+6. KHÔNG tick "Add .gitignore"  
+7. KHÔNG tick "Choose a license"
+8. Click "Create repository"
+
+🔗 BƯỚC 2: Kết nối và Push
+==========================
+Sau khi tạo repository, chạy lệnh:
+
+git remote add origin https://github.com/namxely/github-activity-bot.git
+git branch -M main
+git push -u origin main
+
+📋 BƯỚC 3: Xác nhận
+==================
+Sau khi push thành công, vào:
+https://github.com/namxely/github-activity-bot
+
+Bạn sẽ thấy tất cả commits đã được push lên!
+
+💡 LƯU Ý:
+- Nếu repository đã tồn tại, xóa và tạo lại
+- Đảm bảo tên repository chính xác: "github-activity-bot"
+- Nếu gặp lỗi authentication, cần setup Git credentials
+
+🎯 KẾT QUẢ MONG ĐỢI:
+Contribution graph sẽ tô xanh toàn bộ từ tháng 6/2025 đến nay!

@@ -321,6 +321,103 @@ Thống kê:
         print(f"\n🎉 Hoàn thành! Đã tạo {total_commits} commits cho {days_back} ngày qua!")
         return total_commits
 
+    def auto_push_to_github(self, repo_url=None):
+        """Tự động push lên GitHub"""
+        try:
+            # Kiểm tra remote
+            result = subprocess.run(['git', 'remote', '-v'], 
+                                  cwd=self.repo_path, capture_output=True, text=True)
+            
+            if not result.stdout.strip():
+                if repo_url:
+                    print(f"🔗 Thêm remote origin: {repo_url}")
+                    subprocess.run(['git', 'remote', 'add', 'origin', repo_url], 
+                                 cwd=self.repo_path, check=True)
+                else:
+                    print("❌ Chưa có remote origin. Cần repository URL!")
+                    return False
+            
+            # Push lên GitHub
+            print("📤 Đang push lên GitHub...")
+            subprocess.run(['git', 'push', 'origin', 'main'], 
+                         cwd=self.repo_path, check=True)
+            
+            print("✅ Push thành công lên GitHub!")
+            return True
+            
+        except subprocess.CalledProcessError as e:
+            print(f"❌ Lỗi push: {e}")
+            print("💡 Có thể cần:")
+            print("   - Tạo repository trên GitHub trước")
+            print("   - Cấu hình Git credentials")
+            print("   - Kiểm tra tên branch (main/master)")
+            return False
+    
+    def make_commit_and_push(self, target_date=None, repo_url=None):
+        """Tạo commit và push luôn lên GitHub"""
+        if self.make_commit_with_date(target_date):
+            return self.auto_push_to_github(repo_url)
+        return False
+    
+    def fill_past_activity_and_push(self, days_back=30, commits_per_day_range=(1, 3), repo_url=None, push_frequency=5):
+        """Tạo commits cho quá khứ và push định kỳ"""
+        if not self.initialize_repo():
+            return
+        
+        print(f"🕒 Sẽ tạo commits cho {days_back} ngày qua và push lên GitHub...")
+        print(f"📊 Mỗi ngày: {commits_per_day_range[0]}-{commits_per_day_range[1]} commits")
+        print(f"📤 Push mỗi {push_frequency} commits")
+        
+        total_commits = 0
+        commits_since_push = 0
+        today = datetime.datetime.now()
+        
+        for i in range(days_back, 0, -1):
+            target_date = today - datetime.timedelta(days=i)
+            
+            # Bỏ qua cuối tuần
+            if target_date.weekday() >= 5:
+                if random.random() < 0.7:
+                    continue
+            
+            commits_today = random.randint(commits_per_day_range[0], commits_per_day_range[1])
+            print(f"\n📅 {target_date.strftime('%Y-%m-%d')}: Tạo {commits_today} commits...")
+            
+            for j in range(commits_today):
+                random_hour = random.randint(8, 22)
+                random_minute = random.randint(0, 59)
+                random_second = random.randint(0, 59)
+                
+                commit_time = target_date.replace(
+                    hour=random_hour, 
+                    minute=random_minute, 
+                    second=random_second
+                )
+                
+                if self.make_commit_with_date(commit_time):
+                    total_commits += 1
+                    commits_since_push += 1
+                    print(f"  ✅ Commit {j+1}/{commits_today} - {commit_time.strftime('%H:%M')}")
+                    
+                    # Push định kỳ
+                    if commits_since_push >= push_frequency:
+                        print(f"\n📤 Push {commits_since_push} commits lên GitHub...")
+                        if self.auto_push_to_github(repo_url):
+                            commits_since_push = 0
+                            print(f"✅ Đã push! Tổng: {total_commits} commits")
+                        else:
+                            print("⚠️ Push thất bại, tiếp tục tạo commits...")
+                
+                time.sleep(0.1)  # Giảm delay
+        
+        # Push commits cuối cùng
+        if commits_since_push > 0:
+            print(f"\n📤 Push {commits_since_push} commits cuối...")
+            self.auto_push_to_github(repo_url)
+        
+        print(f"\n🎉 HOÀN THÀNH! Đã tạo và push {total_commits} commits!")
+        return total_commits
+
 def main():
     bot = GitHubActivityBot()
     
@@ -333,10 +430,12 @@ def main():
         print("2. Chạy hoạt động hàng ngày") 
         print("3. 🕒 Tạo commits cho quá khứ (backdate)")
         print("4. 📅 Tạo commit cho ngày cụ thể")
-        print("5. Hướng dẫn thiết lập tự động")
-        print("6. Thoát")
+        print("5. 🚀 Tạo commits + AUTO PUSH lên GitHub")
+        print("6. 📤 Push commits hiện tại lên GitHub") 
+        print("7. Hướng dẫn thiết lập tự động")
+        print("8. Thoát")
         
-        choice = input("\nNhập lựa chọn (1-6): ").strip()
+        choice = input("\nNhập lựa chọn (1-8): ").strip()
         
         if choice == '1':
             bot.make_commit()
@@ -379,10 +478,37 @@ def main():
                 bot.make_commit_with_date(target_date)
             except ValueError:
                 print("❌ Định dạng ngày không đúng! Sử dụng YYYY-MM-DD")
-                
+        
         elif choice == '5':
-            bot.setup_scheduler()
+            print("🚀 CHỨC NĂNG AUTO PUSH - Giống như trong video!")
+            repo_url = input("GitHub repo URL (vd: https://github.com/namxely/repo-name.git): ").strip()
+            if not repo_url:
+                repo_url = "https://github.com/namxely/github-activity-bot.git"  # Default
+                
+            days_back = input("Số ngày quá khứ (mặc định 30): ").strip()
+            days_back = int(days_back) if days_back.isdigit() else 30
+            
+            push_freq = input("Push mỗi bao nhiêu commits (mặc định 5): ").strip()
+            push_freq = int(push_freq) if push_freq.isdigit() else 5
+            
+            print(f"\n📋 Sẽ tạo commits cho {days_back} ngày qua và push định kỳ")
+            print(f"📤 Repository: {repo_url}")
+            confirm = input("Bắt đầu? (y/n): ").strip().lower()
+            
+            if confirm in ['y', 'yes', 'có']:
+                bot.fill_past_activity_and_push(days_back, (1, 3), repo_url, push_freq)
+            else:
+                print("❌ Đã hủy!")
+        
         elif choice == '6':
+            repo_url = input("GitHub repo URL (Enter = mặc định): ").strip()
+            if not repo_url:
+                repo_url = "https://github.com/namxely/github-activity-bot.git"
+            bot.auto_push_to_github(repo_url)
+                
+        elif choice == '7':
+            bot.setup_scheduler()
+        elif choice == '8':
             print("👋 Tạm biệt!")
             break
         else:

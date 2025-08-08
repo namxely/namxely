@@ -1,4 +1,4 @@
-# Namxely
+# Namxely 🚀
 Xin chào 👋, mình là **namxely**!
 Mình đam mê công nghệ, lập trình và luôn mong muốn được chia sẻ, học hỏi với cộng đồng. Đây là repository đặc biệt sẽ xuất hiện trên trang cá nhân GitHub của mình, nơi mình tổng hợp các thông tin giới thiệu về bản thân, hành trình học tập cũng như đóng góp mã nguồn mở.
 
@@ -25,3 +25,4 @@ Cảm ơn bạn đã ghé thăm profile và đọc đến đây! Nếu bạn qua
 ✨ **Cập nhật mới**: Thêm emoji và cải thiện format để README trông chuyên nghiệp hơn!
 Đây là bản cập nhật tự động để nhận badge GitHub.
 Thêm dòng số 2 để thực hiện nhận badge Shark.
+🎯 YOLO update - thêm rocket emoji vào title!

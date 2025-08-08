@@ -1,4 +1,4 @@
-# namxely
+# Namxely
 
 Xin chào 👋, mình là **namxely**!
 

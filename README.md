@@ -22,5 +22,6 @@ Mình đam mê công nghệ, lập trình và luôn mong muốn được chia s�
 Cảm ơn bạn đã ghé thăm profile và đọc đến đây! Nếu bạn quan tâm hoặc có thể hợp tác, đừng ngần ngại liên hệ với mình nhé!
 
 ---
+✨ **Cập nhật mới**: Thêm emoji và cải thiện format để README trông chuyên nghiệp hơn!
 Đây là bản cập nhật tự động để nhận badge GitHub.
 Thêm dòng số 2 để thực hiện nhận badge Shark.

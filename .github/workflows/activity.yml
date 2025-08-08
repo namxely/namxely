@@ -1,0 +1,33 @@
+name: GitHub Activity Bot
+on:
+  schedule:
+    - cron: '0 2,10,18 * * *'  # Chạy 3 lần/ngày: 2:00, 10:00, 18:00 UTC
+  workflow_dispatch:  # Cho phép chạy thủ công
+
+jobs:
+  activity:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        
+    - name: Configure Git
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action Bot"
+        
+    - name: Generate Activity
+      run: python generate_activity.py
+        
+    - name: Commit Changes
+      run: |
+        git add .
+        git commit -m "🤖 Automated activity update - $(date '+%Y-%m-%d %H:%M')"
+        git push

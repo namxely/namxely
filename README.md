@@ -1,20 +1,30 @@
-# Personal Development Repository
+# namxely
 
-Welcome to my coding journey! 
+Xin chào 👋, mình là **namxely**!
 
-## Recent Updates
-- Last modified: 2025-08-08T12:43:08.136408
-- Status: Active development
-- Focus: Continuous learning and improvement
+Mình đam mê công nghệ, lập trình và luôn mong muốn được chia sẻ, học hỏi với cộng đồng. Đây là repository đặc biệt sẽ xuất hiện trên trang cá nhân GitHub của mình, nơi mình tổng hợp các thông tin giới thiệu về bản thân, hành trình học tập cũng như đóng góp mã nguồn mở.
 
-## Project Structure
-This repository contains various projects and experiments.
+## 📝 Giới Thiệu Bản Thân
 
-## Technologies
-- Python
-- JavaScript  
-- Web Development
-- Data Analysis
+- 🌱 Hiện tại mình đang học tập chuyên sâu các lĩnh vực như **lập trình Python, Machine Learning và phát triển web**.
+- ⚡ Mình thích khám phá các công nghệ mới, thử thách bản thân bằng cách tham gia các dự án cá nhân cũng như cộng tác với các bạn bè đam mê lập trình.
+- 💬 Sở thích của mình gồm đọc sách công nghệ, viết blog chia sẻ kiến thức, giải các vấn đề thuật toán và đóng góp cho các dự án mã nguồn mở.
+- 🏆 Mục tiêu trong thời gian tới là:
+  - Tham gia đóng góp cho các dự án nổi bật trên GitHub.
+  - Xây dựng một website cá nhân chia sẻ kiến thức và trải nghiệm học tập.
+  - Tạo ra những sản phẩm hữu ích giúp ích cho cộng đồng.
+
+
+## 🌎 Kết Nối Với Mình
+
+- 💌 Email:namnguyen2452003@gmail.com
+- 💼 LinkedIn: (https://www.linkedin.com/in/namxely/)
+- 📂 GitHub: [namxely](https://github.com/namxely)
 
 ---
-Generated on: 2025-08-08T12:43:08.136408
+
+> _“The best way to learn is to share what you know.”_
+
+Cảm ơn bạn đã ghé thăm profile và đọc đến đây! Nếu bạn quan tâm hoặc có thể hợp tác, đừng ngần ngại liên hệ với mình nhé!
+
+---

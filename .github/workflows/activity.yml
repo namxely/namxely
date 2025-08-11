@@ -1,8 +1,12 @@
 name: GitHub Activity Bot
+
 on:
   schedule:
     - cron: '0 2,10,18 * * *'  # Chạy 3 lần/ngày: 2:00, 10:00, 18:00 UTC
   workflow_dispatch:  # Cho phép chạy thủ công
+
+permissions:
+  contents: write
 
 jobs:
   activity:

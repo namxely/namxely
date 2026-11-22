@@ -1,0 +1,124 @@
+<svg
+  width="860"
+  height="110"
+  viewBox="0 0 860 110"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  role="img"
+  aria-label="GitHub Trophies for namxely"
+>
+  <defs>
+    <linearGradient id="gold-rank" gradientTransform="rotate(45)">
+      <stop offset="0%" stop-color="#e5c07b" />
+      <stop offset="100%" stop-color="#d19a66" />
+    </linearGradient>
+    <linearGradient id="cyan-rank" gradientTransform="rotate(45)">
+      <stop offset="0%" stop-color="#56b6c2" />
+      <stop offset="100%" stop-color="#61afef" />
+    </linearGradient>
+    <linearGradient id="green-rank" gradientTransform="rotate(45)">
+      <stop offset="0%" stop-color="#98c379" />
+      <stop offset="100%" stop-color="#56b6c2" />
+    </linearGradient>
+    <symbol id="trophy-cup" viewBox="0 0 24 24">
+      <path d="M18 4h2a1 1 0 0 1 1 1v2a4 4 0 0 1-3.44 3.96A6.01 6.01 0 0 1 13 15.92V18h3a1 1 0 0 1 1 1v2H7v-2a1 1 0 0 1 1-1h3v-2.08A6.01 6.01 0 0 1 6.44 10.96 4 4 0 0 1 3 7V5a1 1 0 0 1 1-1h2V3h12v1ZM6 6H5v1a2 2 0 0 0 1.24 1.85A6.03 6.03 0 0 1 6 7V6Zm13 1V6h-1v1c0 .63-.08 1.25-.24 1.85A2 2 0 0 0 19 7Z" />
+    </symbol>
+    <style>
+      .t-title { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-weight: 700; font-size: 12px; fill: #e5c07b; text-anchor: middle; }
+      .t-rank  { font-family: "Courier New", monospace; font-weight: 700; font-size: 9px; fill: #282c34; text-anchor: middle; }
+      .t-sub   { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-weight: 700; font-size: 9.5px; fill: #e06c75; text-anchor: middle; }
+      .t-val   { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-weight: 700; font-size: 9.5px; fill: #abb2bf; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Tile 1: Stars -->
+  <g transform="translate(0, 0)">
+    <rect x="0.5" y="0.5" rx="4.5" width="109" height="109" fill="#282c34" stroke="#e1e4e8" />
+    <text class="t-title" x="55" y="19">Stars</text>
+    <use href="#trophy-cup" x="34" y="26" width="42" height="42" fill="url(#gold-rank)" />
+    <circle cx="55" cy="40" r="6.5" fill="#ffffff" />
+    <text class="t-rank" x="55" y="43">A</text>
+    <text class="t-sub" x="55" y="83">Star Gazer</text>
+    <text class="t-val" x="55" y="95">31 Stars</text>
+    <rect x="15" y="101" rx="1" width="80" height="3.2" fill="#e5c07b" opacity="0.3" />
+    <rect x="15" y="101" rx="1" width="64" height="3.2" fill="#e5c07b" />
+  </g>
+
+  <!-- Tile 2: Repositories -->
+  <g transform="translate(125, 0)">
+    <rect x="0.5" y="0.5" rx="4.5" width="109" height="109" fill="#282c34" stroke="#e1e4e8" />
+    <text class="t-title" x="55" y="19">Repositories</text>
+    <use href="#trophy-cup" x="34" y="26" width="42" height="42" fill="url(#cyan-rank)" />
+    <circle cx="55" cy="40" r="6.5" fill="#ffffff" />
+    <text class="t-rank" x="55" y="43">A</text>
+    <text class="t-sub" x="55" y="83">Builder</text>
+    <text class="t-val" x="55" y="95">10 Public</text>
+    <rect x="15" y="101" rx="1" width="80" height="3.2" fill="#56b6c2" opacity="0.3" />
+    <rect x="15" y="101" rx="1" width="60" height="3.2" fill="#56b6c2" />
+  </g>
+
+  <!-- Tile 3: MultiLanguage -->
+  <g transform="translate(250, 0)">
+    <rect x="0.5" y="0.5" rx="4.5" width="109" height="109" fill="#282c34" stroke="#e1e4e8" />
+    <text class="t-title" x="55" y="19">MultiLanguage</text>
+    <use href="#trophy-cup" x="34" y="26" width="42" height="42" fill="url(#gold-rank)" />
+    <circle cx="55" cy="40" r="6.5" fill="#ffffff" />
+    <text class="t-rank" x="55" y="43">A</text>
+    <text class="t-sub" x="55" y="83">Polyglot</text>
+    <text class="t-val" x="55" y="95">Py · TS · Go</text>
+    <rect x="15" y="101" rx="1" width="80" height="3.2" fill="#e5c07b" opacity="0.3" />
+    <rect x="15" y="101" rx="1" width="68" height="3.2" fill="#e5c07b" />
+  </g>
+
+  <!-- Tile 4: PullRequest -->
+  <g transform="translate(375, 0)">
+    <rect x="0.5" y="0.5" rx="4.5" width="109" height="109" fill="#282c34" stroke="#e1e4e8" />
+    <text class="t-title" x="55" y="19">PullRequest</text>
+    <use href="#trophy-cup" x="34" y="26" width="42" height="42" fill="url(#green-rank)" />
+    <circle cx="55" cy="40" r="6.5" fill="#ffffff" />
+    <text class="t-rank" x="55" y="43">B</text>
+    <text class="t-sub" x="55" y="83">Puller</text>
+    <text class="t-val" x="55" y="95">11 PRs</text>
+    <rect x="15" y="101" rx="1" width="80" height="3.2" fill="#98c379" opacity="0.3" />
+    <rect x="15" y="101" rx="1" width="52" height="3.2" fill="#98c379" />
+  </g>
+
+  <!-- Tile 5: Issues -->
+  <g transform="translate(500, 0)">
+    <rect x="0.5" y="0.5" rx="4.5" width="109" height="109" fill="#282c34" stroke="#e1e4e8" />
+    <text class="t-title" x="55" y="19">Issues</text>
+    <use href="#trophy-cup" x="34" y="26" width="42" height="42" fill="url(#cyan-rank)" />
+    <circle cx="55" cy="40" r="6.5" fill="#ffffff" />
+    <text class="t-rank" x="55" y="43">B</text>
+    <text class="t-sub" x="55" y="83">Issuer</text>
+    <text class="t-val" x="55" y="95">2 Issues</text>
+    <rect x="15" y="101" rx="1" width="80" height="3.2" fill="#56b6c2" opacity="0.3" />
+    <rect x="15" y="101" rx="1" width="44" height="3.2" fill="#56b6c2" />
+  </g>
+
+  <!-- Tile 6: Experience -->
+  <g transform="translate(625, 0)">
+    <rect x="0.5" y="0.5" rx="4.5" width="109" height="109" fill="#282c34" stroke="#e1e4e8" />
+    <text class="t-title" x="55" y="19">Experience</text>
+    <use href="#trophy-cup" x="34" y="26" width="42" height="42" fill="url(#green-rank)" />
+    <circle cx="55" cy="40" r="6.5" fill="#ffffff" />
+    <text class="t-rank" x="55" y="43">A</text>
+    <text class="t-sub" x="55" y="83">Dev Journey</text>
+    <text class="t-val" x="55" y="95">Since 2024</text>
+    <rect x="15" y="101" rx="1" width="80" height="3.2" fill="#98c379" opacity="0.3" />
+    <rect x="15" y="101" rx="1" width="58" height="3.2" fill="#98c379" />
+  </g>
+
+  <!-- Tile 7: AI & Systems -->
+  <g transform="translate(750, 0)">
+    <rect x="0.5" y="0.5" rx="4.5" width="109" height="109" fill="#282c34" stroke="#e1e4e8" />
+    <text class="t-title" x="55" y="19">Focus</text>
+    <use href="#trophy-cup" x="34" y="26" width="42" height="42" fill="url(#gold-rank)" />
+    <circle cx="55" cy="40" r="6.5" fill="#ffffff" />
+    <text class="t-rank" x="55" y="43">S</text>
+    <text class="t-sub" x="55" y="83">AI &amp; Full-Stack</text>
+    <text class="t-val" x="55" y="95">CV · Agents</text>
+    <rect x="15" y="101" rx="1" width="80" height="3.2" fill="#e5c07b" opacity="0.3" />
+    <rect x="15" y="101" rx="1" width="72" height="3.2" fill="#e5c07b" />
+  </g>
+</svg>

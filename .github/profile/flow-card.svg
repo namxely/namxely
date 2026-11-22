@@ -1,0 +1,239 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="220"
+  height="200"
+  viewBox="0 0 220 200"
+  role="img"
+  aria-labelledby="flow-title flow-desc"
+>
+  <title id="flow-title">Continuous AI/ML &amp; product flow</title>
+  <desc id="flow-desc">Bright blue and cyan currents, particles, and nodes travel around an infinity-shaped data-to-product orchestration loop.</desc>
+
+  <defs>
+    <linearGradient id="flow-gradient" x1="32" y1="58" x2="188" y2="142" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#67C7FF" />
+      <stop offset="0.32" stop-color="rgb(53, 139, 247)" />
+      <stop offset="0.58" stop-color="#37B8EE" />
+      <stop offset="0.78" stop-color="#2AC9D9" />
+      <stop offset="1" stop-color="#38D5C0" />
+    </linearGradient>
+    <radialGradient id="ambient" cx="0" cy="0" r="1" gradientTransform="translate(110 100) rotate(90) scale(90 104)">
+      <stop offset="0" stop-color="#D4F1FF" stop-opacity="0.72" />
+      <stop offset="0.68" stop-color="#EAF8FF" stop-opacity="0.26" />
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0" />
+    </radialGradient>
+    <filter id="ribbon-glow" x="-30%" y="-80%" width="160%" height="260%">
+      <feGaussianBlur stdDeviation="4.2" />
+    </filter>
+    <filter id="node-glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3.2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <clipPath id="card-clip">
+      <rect x="0.5" y="0.5" width="219" height="199" rx="12" />
+    </clipPath>
+    <path
+      id="flow-loop"
+      pathLength="100"
+      d="M34 100C34 62 74 54 106 94C138 134 186 138 186 100C186 62 146 54 114 94C82 134 34 138 34 100"
+    />
+  </defs>
+
+  <style>
+    .flow-ribbon {
+      animation: stream 3.1s linear infinite;
+      stroke-dasharray: 13 7;
+    }
+    .flow-ribbon-secondary {
+      animation: stream-secondary 4.4s linear infinite;
+      stroke-dasharray: 4 13;
+    }
+    .flow-ribbon-glint {
+      animation: glint 2.4s linear infinite;
+      stroke-dasharray: 7 29;
+    }
+    .flow-ribbon-cyan {
+      animation: cyan-stream 3.8s linear infinite;
+      stroke-dasharray: 3.5 5.5;
+    }
+    .core {
+      animation: pulse 2.8s ease-in-out infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    .halo {
+      animation: halo 2.8s ease-in-out infinite;
+    }
+    .spark {
+      animation: twinkle 2.2s ease-in-out infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    .glyph-spark {
+      animation: glyph-twinkle 3.2s ease-in-out infinite;
+      font-family: monospace;
+      font-weight: 700;
+      text-anchor: middle;
+    }
+    .caption {
+      font-family: Inter, -apple-system, "Segoe UI", sans-serif;
+      font-size: 9px;
+      font-weight: 600;
+      fill: #475569;
+      text-anchor: middle;
+    }
+
+    @keyframes stream {
+      to { stroke-dashoffset: -40; }
+    }
+    @keyframes stream-secondary {
+      to { stroke-dashoffset: 34; }
+    }
+    @keyframes glint {
+      to { stroke-dashoffset: -72; }
+    }
+    @keyframes cyan-stream {
+      to { stroke-dashoffset: -36; }
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(0.9); opacity: 0.86; }
+      50% { transform: scale(1.12); opacity: 1; }
+    }
+    @keyframes halo {
+      0%, 100% { opacity: 0.18; }
+      50% { opacity: 0.42; }
+    }
+    @keyframes twinkle {
+      0%, 100% { transform: scale(0.65); opacity: 0.22; }
+      50% { transform: scale(1.25); opacity: 0.92; }
+    }
+    @keyframes glyph-twinkle {
+      0%, 100% { opacity: 0.25; }
+      50% { opacity: 0.9; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .flow-ribbon,
+      .flow-ribbon-secondary,
+      .flow-ribbon-glint,
+      .flow-ribbon-cyan,
+      .core,
+      .halo,
+      .spark,
+      .glyph-spark { animation: none; }
+      .motion-node { display: none; }
+    }
+  </style>
+
+  <g clip-path="url(#card-clip)">
+    <rect width="220" height="200" fill="#FFFFFF" />
+    <rect width="220" height="200" fill="url(#ambient)" />
+
+    <use href="#flow-loop" fill="none" stroke="#C8EDFA" stroke-opacity="0.82" stroke-width="12" stroke-linecap="round" />
+    <use href="#flow-loop" fill="none" stroke="url(#flow-gradient)" stroke-opacity="0.2" stroke-width="15" stroke-linecap="round" filter="url(#ribbon-glow)" />
+
+    <use href="#flow-loop" transform="translate(0 -3.5)" fill="none" stroke="#7BDAF4" stroke-opacity="0.42" stroke-width="1.1" stroke-linecap="round" />
+    <use href="#flow-loop" transform="translate(0 3.5)" fill="none" stroke="#55C8EE" stroke-opacity="0.3" stroke-width="1.1" stroke-linecap="round" />
+
+    <use href="#flow-loop" fill="none" stroke="url(#flow-gradient)" stroke-width="7.2" stroke-linecap="round" />
+    <use
+      href="#flow-loop"
+      class="flow-ribbon"
+      fill="none"
+      stroke="rgb(53, 139, 247)"
+      stroke-opacity="0.72"
+      stroke-width="7.2"
+      stroke-linecap="round"
+    />
+    <use
+      href="#flow-loop"
+      class="flow-ribbon-cyan"
+      fill="none"
+      stroke="#31C9D9"
+      stroke-opacity="0.9"
+      stroke-width="2.2"
+      stroke-linecap="round"
+    />
+    <use
+      href="#flow-loop"
+      class="flow-ribbon-secondary"
+      fill="none"
+      stroke="#D9FAFF"
+      stroke-opacity="0.95"
+      stroke-width="2.4"
+      stroke-linecap="round"
+    />
+    <use
+      href="#flow-loop"
+      class="flow-ribbon-glint"
+      fill="none"
+      stroke="#A8F0F4"
+      stroke-opacity="0.9"
+      stroke-width="1.15"
+      stroke-linecap="round"
+    />
+
+    <circle class="motion-node" r="5.2" fill="#54D7F6" filter="url(#node-glow)">
+      <animateMotion dur="4.2s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#flow-loop" />
+      </animateMotion>
+    </circle>
+    <circle class="motion-node" r="4.6" fill="rgb(53, 139, 247)" filter="url(#node-glow)">
+      <animateMotion dur="4.2s" begin="-1.4s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#flow-loop" />
+      </animateMotion>
+    </circle>
+    <circle class="motion-node" r="4.8" fill="#3AD7C2" filter="url(#node-glow)">
+      <animateMotion dur="4.2s" begin="-2.8s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#flow-loop" />
+      </animateMotion>
+    </circle>
+
+    <g fill="#2ABFEA">
+      <circle class="spark" cx="100" cy="79" r="1.35" />
+      <circle class="spark" cx="119" cy="82" r="1.05" style="animation-delay:-0.6s" />
+      <circle class="spark" cx="126" cy="91" r="1.2" style="animation-delay:-1.2s" />
+      <circle class="spark" cx="97" cy="109" r="1.1" style="animation-delay:-0.9s" />
+      <circle class="spark" cx="121" cy="116" r="1.35" style="animation-delay:-1.5s" />
+      <circle class="spark" cx="104" cy="123" r="0.95" style="animation-delay:-0.3s" />
+      <circle class="spark" cx="136" cy="106" r="1.05" style="animation-delay:-1.8s" />
+      <circle class="spark" cx="87" cy="99" r="0.9" style="animation-delay:-0.8s" />
+    </g>
+    <g class="glyph-spark" fill="#10A8D4" font-size="5.5">
+      <text x="66" y="63">+</text>
+      <text x="56" y="128" style="animation-delay:-1.1s">&#183;</text>
+      <text x="151" y="145" style="animation-delay:-2s">+</text>
+      <text x="169" y="82" style="animation-delay:-0.7s">&#183;</text>
+      <text x="91" y="151" style="animation-delay:-1.6s">+</text>
+    </g>
+
+    <circle class="halo" cx="110" cy="100" r="21" fill="#38BDF8" opacity="0.24" />
+    <circle cx="110" cy="100" r="11.2" fill="#BCEEFF" fill-opacity="0.72" />
+    <g class="core" filter="url(#node-glow)">
+      <circle cx="110" cy="100" r="6.2" fill="url(#flow-gradient)" />
+      <circle cx="110" cy="100" r="2.1" fill="#FFFFFF" />
+    </g>
+
+    <circle cx="48" cy="71" r="2.2" fill="#80D2FF" opacity="0.78" />
+    <circle cx="172" cy="67" r="1.8" fill="#35C9D7" opacity="0.72" />
+    <circle cx="177" cy="133" r="2.4" fill="rgb(53, 139, 247)" opacity="0.72" />
+    <circle cx="43" cy="132" r="1.6" fill="#5EC4FF" opacity="0.72" />
+
+    <text class="caption" x="110" y="180">Data &#8594; Features &#8594; Model &#8594; Product</text>
+  </g>
+
+  <rect
+    x="1"
+    y="1"
+    width="218"
+    height="198"
+    rx="11.5"
+    fill="none"
+    stroke="#9CCBF9"
+    stroke-width="1.5"
+    stroke-opacity="1"
+  />
+</svg>

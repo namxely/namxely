@@ -1,0 +1,147 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="440"
+  height="200"
+  viewBox="0 0 440 200"
+  role="img"
+  aria-labelledby="radar-title radar-desc"
+>
+  <title id="radar-title">@namxely Skill &amp; Engineering Radar</title>
+  <desc id="radar-desc">Hexagonal skill radar across AI/ML, CV &amp; YOLO, Full-Stack, Backend, Systems, and Data/SQL alongside internship highlights.</desc>
+
+  <defs>
+    <linearGradient id="radar-poly-fill" x1="68" y1="52" x2="156" y2="148" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#358BF7" stop-opacity="0.34" />
+      <stop offset="0.55" stop-color="#37B8EE" stop-opacity="0.28" />
+      <stop offset="1" stop-color="#38D5C0" stop-opacity="0.32" />
+    </linearGradient>
+    <linearGradient id="radar-poly-stroke" x1="68" y1="52" x2="156" y2="148" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2563EB" />
+      <stop offset="0.55" stop-color="#0EA5E9" />
+      <stop offset="1" stop-color="#14B8A6" />
+    </linearGradient>
+    <radialGradient id="radar-ambient" cx="0" cy="0" r="1" gradientTransform="translate(112 102) rotate(90) scale(86 105)">
+      <stop offset="0" stop-color="#D4F1FF" stop-opacity="0.55" />
+      <stop offset="0.7" stop-color="#EAF8FF" stop-opacity="0.2" />
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0" />
+    </radialGradient>
+    <clipPath id="radar-clip">
+      <rect x="0.5" y="0.5" width="439" height="199" rx="12" />
+    </clipPath>
+  </defs>
+
+  <style>
+    .axis-label {
+      font-family: Inter, -apple-system, "Segoe UI", sans-serif;
+      font-size: 8.5px;
+      font-weight: 600;
+      fill: #334155;
+    }
+    .handle {
+      font-family: Inter, -apple-system, "Segoe UI", sans-serif;
+      font-size: 16px;
+      font-weight: 800;
+      fill: #0F172A;
+    }
+    .subtitle {
+      font-family: Inter, -apple-system, "Segoe UI", sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      fill: #475569;
+    }
+    .badge-text {
+      font-family: Inter, -apple-system, "Segoe UI", sans-serif;
+      font-size: 9px;
+      font-weight: 700;
+      fill: #0369A1;
+      text-anchor: middle;
+    }
+    .row-text {
+      font-family: Inter, -apple-system, "Segoe UI", sans-serif;
+      font-size: 9.2px;
+      font-weight: 600;
+      fill: #1E293B;
+    }
+    .meta-text {
+      font-family: Inter, -apple-system, "Segoe UI", sans-serif;
+      font-size: 9px;
+      font-weight: 600;
+      fill: #0284C7;
+    }
+  </style>
+
+  <g clip-path="url(#radar-clip)">
+    <rect width="440" height="200" fill="#FFFFFF" />
+    <rect width="230" height="200" fill="url(#radar-ambient)" />
+
+    <!-- Radar grid rings (center 112, 102; R=54, 36, 18) -->
+    <polygon points="112,48 158.8,75 158.8,129 112,156 65.2,129 65.2,75" fill="#FFFFFF" fill-opacity="0.55" stroke="#CBE5FA" stroke-width="1" />
+    <polygon points="112,66 143.2,84 143.2,120 112,138 80.8,120 80.8,84" fill="none" stroke="#DCECFB" stroke-width="0.9" />
+    <polygon points="112,84 127.6,93 127.6,111 112,120 96.4,111 96.4,93" fill="none" stroke="#E8F3FC" stroke-width="0.9" />
+
+    <!-- Radar axes -->
+    <line x1="112" y1="48" x2="112" y2="156" stroke="#D4E8FA" stroke-width="0.9" />
+    <line x1="65.2" y1="75" x2="158.8" y2="129" stroke="#D4E8FA" stroke-width="0.9" />
+    <line x1="65.2" y1="129" x2="158.8" y2="75" stroke="#D4E8FA" stroke-width="0.9" />
+
+    <!-- Skill polygon -->
+    <polygon
+      points="112,53.4 152.2,78.8 153.1,125.8 112,147.4 75.5,123.1 72.2,79.1"
+      fill="url(#radar-poly-fill)"
+      stroke="url(#radar-poly-stroke)"
+      stroke-width="2"
+      stroke-linejoin="round"
+    />
+
+    <!-- Vertex dots -->
+    <circle cx="112" cy="53.4" r="3" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.1" />
+    <circle cx="152.2" cy="78.8" r="3" fill="#0EA5E9" stroke="#FFFFFF" stroke-width="1.1" />
+    <circle cx="153.1" cy="125.8" r="3" fill="#06B6D4" stroke="#FFFFFF" stroke-width="1.1" />
+    <circle cx="112" cy="147.4" r="3" fill="#14B8A6" stroke="#FFFFFF" stroke-width="1.1" />
+    <circle cx="75.5" cy="123.1" r="3" fill="#0EA5E9" stroke="#FFFFFF" stroke-width="1.1" />
+    <circle cx="72.2" cy="79.1" r="3" fill="#3B82F6" stroke="#FFFFFF" stroke-width="1.1" />
+
+    <!-- Radar labels -->
+    <text class="axis-label" x="112" y="38" text-anchor="middle">AI / ML</text>
+    <text class="axis-label" x="164" y="73" text-anchor="start">CV &amp; YOLO</text>
+    <text class="axis-label" x="164" y="134" text-anchor="start">Full-Stack</text>
+    <text class="axis-label" x="112" y="171" text-anchor="middle">Backend</text>
+    <text class="axis-label" x="60" y="134" text-anchor="end">Systems</text>
+    <text class="axis-label" x="60" y="73" text-anchor="end">Data / SQL</text>
+
+    <!-- Vertical divider -->
+    <line x1="222" y1="20" x2="222" y2="180" stroke="#E2EEF9" stroke-width="1.2" />
+
+    <!-- Right-side profile highlights -->
+    <text class="handle" x="236" y="40">@namxely</text>
+    <rect x="356" y="25" width="66" height="20" rx="10" fill="#E8F6FE" stroke="#9CCBF9" stroke-width="1" />
+    <text class="badge-text" x="389" y="38">CS @ IUH</text>
+
+    <text class="subtitle" x="236" y="57">AI/ML &#183; Computer Vision &#183; Full-Stack</text>
+
+    <rect x="236" y="70" width="186" height="26" rx="6" fill="#F8FBFF" stroke="#DCECFB" stroke-width="1" />
+    <circle cx="247" cy="83" r="3.4" fill="#358BF7" />
+    <text class="row-text" x="256" y="86">AI Agent &amp; Planogram AI &#183; GESO</text>
+
+    <rect x="236" y="102" width="186" height="26" rx="6" fill="#F8FBFF" stroke="#DCECFB" stroke-width="1" />
+    <circle cx="247" cy="115" r="3.4" fill="#2AC9D9" />
+    <text class="row-text" x="256" y="118">2D/3D CV Training Data &#183; Alchera</text>
+
+    <rect x="236" y="134" width="186" height="26" rx="6" fill="#F8FBFF" stroke="#DCECFB" stroke-width="1" />
+    <circle cx="247" cy="147" r="3.4" fill="#38D5C0" />
+    <text class="row-text" x="256" y="150">Python &#183; TypeScript &#183; Go &#183; FastAPI</text>
+
+    <text class="meta-text" x="236" y="177">10 Repos &#183; 31 Stars &#183; Open to AI/ML &amp; SWE</text>
+  </g>
+
+  <rect
+    x="1"
+    y="1"
+    width="438"
+    height="198"
+    rx="11.5"
+    fill="none"
+    stroke="#9CCBF9"
+    stroke-width="1.5"
+  />
+</svg>

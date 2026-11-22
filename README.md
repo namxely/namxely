@@ -74,6 +74,11 @@
 - 🏦 [**Full-Stack Banking Application**](https://github.com/namxely/UngDungfullstackNganHang) — Web banking system with auth, fund transfers, transaction history &amp; multi-role access (**PHP**, **JavaScript**, **MySQL**, **Bootstrap**)
 - ✅ [**ProductivityHub**](https://github.com/namxely/ProductivityHub) — Personal productivity web app with modern glassmorphism UI (**React**, **TypeScript**, **Node.js**, **Express**, **MongoDB**)
 
+#### 🤝 Open-Source Forks & Bilingual Labs
+
+- 🧠 [**LLM Knowledge Base (`namxely/llm`)**](https://github.com/namxely/llm) · *MIT Fork of [WineChord/llm](https://github.com/WineChord/llm)* — Added **English &amp; Vietnamese companion roadmaps** (`README.en.md`, `README.vi.md`) and tested zero-dependency Python 3.12 labs (`labs/`: **Hybrid BM25 + TF-IDF RRF Retriever** &amp; **ReAct Tool-Calling Agent Runtime** with automated CI).
+- ⚙️ [**Computer Systems Knowledge Base (`namxely/sys`)**](https://github.com/namxely/sys) · *MIT Fork of [WineChord/sys](https://github.com/WineChord/sys)* — Added **English &amp; Vietnamese systems guides** and tested zero-dependency Python 3.12 labs (`labs/`: **O(1) LRU/LFU Cache Simulator** &amp; **Streaming Redis RESP2 Protocol Decoder** with automated CI).
+
 ### 🎓 Certifications & Credentials
 
 <div align="center">

@@ -24,21 +24,22 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&cache_seconds=7200
+          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&hide_rank=true&hide=contribs,issues&cache_seconds=7200
           path: .github/profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate trophy card
-        uses: soulteary/github-profile-trophy-action@v1.0.0
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@v2
         with:
-          options: 'username=${{ github.repository_owner }}&theme=onedark&column=7&margin-w=15&margin-h=15&title=AllSuperRank,MultiLanguage,Repositories,Commits,Follower,Reviews,Issues,PullRequest,Experience,Organizations&show_icons=true'
-          path: .github/profile/trophy.svg
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&size_weight=0.5&count_weight=0.5&hide=html,css&cache_seconds=7200
+          path: .github/profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit cards
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .github/profile/stats.svg .github/profile/trophy.svg
+          git add .github/profile/stats.svg .github/profile/top-langs.svg
           git commit -m "Update README cards" || exit 0
           git push

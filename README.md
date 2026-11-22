@@ -52,6 +52,14 @@
 
 ### 🌟 Featured Projects
 
+<div align="center">
+  <a href="https://github.com/namxely/Build-your-own-viet-redis"><img width="48%" src=".github/profile/repo-vietredis.svg" alt="Build-your-own-viet-redis" /></a>
+  <a href="https://github.com/namxely/NhanDienTepGiong"><img width="48%" src=".github/profile/repo-shrimp-yolo.svg" alt="NhanDienTepGiong YOLOv8" /></a>
+  <br/>
+  <a href="https://github.com/namxely/KhamBenh"><img width="48%" src=".github/profile/repo-healthconnect.svg" alt="KhamBenh HealthConnect 360" /></a>
+  <a href="https://github.com/namxely/qr-code-generator"><img width="48%" src=".github/profile/repo-ai-qr.svg" alt="AI QR Code Generator" /></a>
+</div>
+
 #### 🤖 AI, Computer Vision & Systems
 
 - 🦐 [**YOLOv8 Shrimp Detection**](https://github.com/namxely/NhanDienTepGiong) — Real-time computer vision app for shrimp detection with **Python**, **YOLOv8**, **OpenCV** &amp; **Flask** (`/detect` API, desktop/mobile camera support)
@@ -129,24 +137,13 @@
   <sub>Full credential history on <a href="https://www.linkedin.com/in/namxely/details/certifications/">LinkedIn Certifications ↗</a></sub>
 </div>
 
-### 🪐 GitHub Analysis
+### 🪐 Public GitHub Overview
+
+<p align="center">
+  <sub>🔒 <i>Most of my day-to-day production engineering resides in private enterprise repositories (<b>GESO</b>, <b>FPT.AI</b>, <b>Alchera</b>). Below highlights public open-source &amp; R&amp;D activity.</i></sub>
+</p>
 
 <div align="center">
-  <img height="170px" src=".github/profile/stats.svg" alt="namxely GitHub Stats" />
-  <img height="170px" src="https://github-readme-stats-fast-xtrr.vercel.app/api/streak?username=namxely&theme=default" alt="namxely GitHub Streak" />
-</div>
-
-### ✅ Activity
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/namxely/namxely/output/github-contribution-grid-snake-dark.svg" />
-    <img src="https://raw.githubusercontent.com/namxely/namxely/output/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake" />
-  </picture>
-</div>
-
-### 🏆 Trophy
-
-<div align="center">
-  <img src=".github/profile/trophy.svg" alt="GitHub Trophies" />
+  <img height="145px" src=".github/profile/stats.svg" alt="namxely Public GitHub Overview" />
+  <img height="145px" src=".github/profile/top-langs.svg" alt="namxely Top Languages" />
 </div>

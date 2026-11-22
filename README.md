@@ -35,7 +35,7 @@
 <div align="center">
   🎓 Computer Science Student @ <b>Industrial University of Ho Chi Minh City (IUH)</b><br/>
   🔭 Focusing on <b>End-to-End AI/ML</b> (<code>data → features → model → metrics</code>), <b>Computer Vision</b> &amp; <b>AI Agents</b><br/>
-  ⚡ Experienced at <b>GESO</b> (AI Agent &amp; Planogram AI) and <b>Alchera Vietnam</b> (2D/3D CV Training Data)<br/>
+  ⚡ AI &amp; Software Engineer across <b>GESO</b> (AI Agent &amp; Planogram AI), <b>FPT.AI</b> (Python Data, Chatbots &amp; Tools) &amp; <b>Alchera Vietnam</b> (2D/3D CV Data)<br/>
   🌱 Turning ML models into user-centric full-stack products with <b>FastAPI / Flask</b>, <b>React / Next.js</b> &amp; <b>Go</b>
 </div>
 <br/>
@@ -46,8 +46,9 @@
 
 ### 💼 Experience
 
-- 🤖 [**Global Enterprise Solutions (GESO)**](https://github.com/namxely) · *Software Engineer Intern (6 months)* — Built and deployed an internal **AI Agent**, assisted in developing an **AI-based Display / Planogram Scoring** solution for dairy &amp; FMCG clients (**NutiFood**, **Vifon**), and contributed to **DMS** software testing.
-- 🎯 [**Alchera Vietnam**](https://github.com/namxely) · *Data Annotation / AI Training Data Intern (2 months)* — Executed high-precision **2D bounding box**, **semantic segmentation**, and **3D point-cloud / LiDAR** labeling pipelines for object detection, facial recognition, and 3D reconstruction models.
+- 🤖 **Global Enterprise Solutions (GESO)** · *AI &amp; Software Engineer (6 months)* — Built and deployed an internal **AI Agent**, developed an **AI-based Display / Planogram Scoring** solution for dairy &amp; FMCG clients (**NutiFood**, **Vifon**), and contributed to **DMS** software quality assurance.
+- 🐍 **FPT.AI** · *Python AI &amp; Automation Engineer (4 months)* — Engineered **Python** data processing pipelines and cleansing utilities for diverse enterprise customer datasets; developed, customized, and maintained **AI chatbots / conversational workflows** alongside internal Python automation tools to accelerate data ingestion and bot operations.
+- 🎯 **Alchera Vietnam** · *AI Training Data Specialist (2 months)* — Executed high-precision **2D bounding box**, **semantic segmentation**, and **3D point-cloud / LiDAR** annotation pipelines for object detection, facial recognition, and 3D reconstruction models.
 
 ### 🌟 Featured Projects
 
@@ -65,13 +66,68 @@
 - 🏦 [**Full-Stack Banking Application**](https://github.com/namxely/UngDungfullstackNganHang) — Web banking system with auth, fund transfers, transaction history &amp; multi-role access (**PHP**, **JavaScript**, **MySQL**, **Bootstrap**)
 - ✅ [**ProductivityHub**](https://github.com/namxely/ProductivityHub) — Personal productivity web app with modern glassmorphism UI (**React**, **TypeScript**, **Node.js**, **Express**, **MongoDB**)
 
-### 🎓 Coursework & Certifications
+### 🎓 Certifications & Credentials
 
-- 🤗 **Hugging Face** — AI Agents Fundamentals
-- ☁️ **Microsoft / Coursera** — Perform Data Science with Azure Databricks
-- 📊 **Kaggle** — Computer Vision &amp; Intro to Deep Learning
-- ❄️ **Board Infinity** — SnowPro Core Certification Preparation
-- ✨ **Google** — Prompting Essentials
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="210">
+        <a href="https://huggingface.co/datasets/agents-course/certificates/resolve/main/certificates/nam2644/2025-06-18.png">
+          <img src="img/certs/hf-ai-agents.jpg" width="190" alt="AI Agents Fundamentals" />
+        </a><br/>
+        <b>AI Agents Fundamentals</b><br/>
+        <sub>Hugging Face · <a href="https://huggingface.co/datasets/agents-course/certificates/resolve/main/certificates/nam2644/2025-06-18.png">Verify ↗</a></sub>
+      </td>
+      <td align="center" width="210">
+        <a href="https://www.coursera.org/account/accomplishments/professional-cert/certificate/X1A8QGA90UYC">
+          <img src="img/certs/google-python-automation.jpg" width="190" alt="Google IT Automation with Python" />
+        </a><br/>
+        <b>IT Automation with Python</b><br/>
+        <sub>Google · <a href="https://www.coursera.org/account/accomplishments/professional-cert/certificate/X1A8QGA90UYC">Verify ↗</a></sub>
+      </td>
+      <td align="center" width="210">
+        <a href="https://www.coursera.org/account/accomplishments/verify/AWCDFMCMRD71">
+          <img src="img/certs/microsoft-azure-databricks.jpg" width="190" alt="Perform Data Science with Azure Databricks" />
+        </a><br/>
+        <b>Azure Databricks Data Science</b><br/>
+        <sub>Microsoft · <a href="https://www.coursera.org/account/accomplishments/verify/AWCDFMCMRD71">Verify ↗</a></sub>
+      </td>
+      <td align="center" width="210">
+        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/WYSUAAUGGLT4">
+          <img src="img/certs/google-prompting-essentials.jpg" width="190" alt="Google Prompting Essentials" />
+        </a><br/>
+        <b>Prompting Essentials</b><br/>
+        <sub>Google · <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/WYSUAAUGGLT4">Verify ↗</a></sub>
+      </td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <td align="center" width="210">
+        <a href="https://www.coursera.org/account/accomplishments/records/151185C31Y6R">
+          <img src="img/certs/snowflake-snowpro-core.jpg" width="190" alt="Snowflake SnowPro Core Certification Preparation" />
+        </a><br/>
+        <b>SnowPro Core Prep</b><br/>
+        <sub>Board Infinity · <a href="https://www.coursera.org/account/accomplishments/records/151185C31Y6R">Verify ↗</a></sub>
+      </td>
+      <td align="center" width="210">
+        <a href="https://www.kaggle.com/learn/certification/nam199245/computer-vision">
+          <img src="img/certs/kaggle-computer-vision.jpg" width="190" alt="Kaggle Computer Vision" />
+        </a><br/>
+        <b>Computer Vision</b><br/>
+        <sub>Kaggle · <a href="https://www.kaggle.com/learn/certification/nam199245/computer-vision">Verify ↗</a></sub>
+      </td>
+      <td align="center" width="210">
+        <a href="https://www.kaggle.com/learn/certification/nam199245/intro-to-deep-learning">
+          <img src="img/certs/kaggle-intro-dl.jpg" width="190" alt="Kaggle Intro to Deep Learning" />
+        </a><br/>
+        <b>Intro to Deep Learning</b><br/>
+        <sub>Kaggle · <a href="https://www.kaggle.com/learn/certification/nam199245/intro-to-deep-learning">Verify ↗</a></sub>
+      </td>
+    </tr>
+  </table>
+  <sub>Full credential history on <a href="https://www.linkedin.com/in/namxely/details/certifications/">LinkedIn Certifications ↗</a></sub>
+</div>
 
 ### 🪐 GitHub Analysis
 

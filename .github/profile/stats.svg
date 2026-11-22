@@ -8,8 +8,8 @@
         role="img"
         aria-labelledby="descId"
       >
-        <title id="titleId">Nguy&#7877;n Th&#224;nh Nam's GitHub Stats, Rank: C+</title>
-        <desc id="descId">Total Stars Earned: 31, Total Commits in 2026 : 0, Total PRs: 11, Total Issues: 2, Contributed to (last year): 0</desc>
+        <title id="titleId">Nguy&#7877;n Th&#224;nh Nam&#39;s GitHub Stats, Rank: C+</title>
+        <desc id="descId">Total Stars Earned: 31, Total Commits  (last year) : 1, Total PRs: 11, Total Issues: 2, Contributed to (last year): 0</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,11 +73,12 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 207.3447102400646;
+        stroke-dashoffset: 207.2287331679049;
       }
     }
   
   
+          
 
           
       /* Animations */
@@ -102,9 +103,15 @@
         </style>
 
         
+        <defs>
+          
+          
+        </defs>
+        
 
         <rect
           data-testid="card-bg"
+          class="card-bg"
           x="0.5"
           y="0.5"
           rx="4.5"
@@ -126,7 +133,7 @@
         y="0"
         class="header"
         data-testid="header"
-      >Nguy&#7877;n Th&#224;nh Nam's GitHub Stats</text>
+      >Nguy&#7877;n Th&#224;nh Nam&#39;s GitHub Stats</text>
     </g>
       </g>
     
@@ -159,7 +166,7 @@
       <text class="stat  bold" x="25" y="12.5">Total Stars Earned:</text>
       <text
         class="stat  bold"
-        x="219.01"
+        x="224.01"
         y="12.5"
         data-testid="stars"
       >31</text>
@@ -171,13 +178,13 @@
       <path fill-rule="evenodd" d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z"/>
     </svg>
   
-      <text class="stat  bold" x="25" y="12.5">Total Commits (2026):</text>
+      <text class="stat  bold" x="25" y="12.5">Total Commits (last year):</text>
       <text
         class="stat  bold"
-        x="219.01"
+        x="224.01"
         y="12.5"
         data-testid="commits"
-      >0</text>
+      >1</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
@@ -189,7 +196,7 @@
       <text class="stat  bold" x="25" y="12.5">Total PRs:</text>
       <text
         class="stat  bold"
-        x="219.01"
+        x="224.01"
         y="12.5"
         data-testid="prs"
       >11</text>
@@ -204,7 +211,7 @@
       <text class="stat  bold" x="25" y="12.5">Total Issues:</text>
       <text
         class="stat  bold"
-        x="219.01"
+        x="224.01"
         y="12.5"
         data-testid="issues"
       >2</text>
@@ -219,7 +226,7 @@
       <text class="stat  bold" x="25" y="12.5">Contributed to (last year):</text>
       <text
         class="stat  bold"
-        x="219.01"
+        x="224.01"
         y="12.5"
         data-testid="contribs"
       >0</text>

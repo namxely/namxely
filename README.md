@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="img/hero.png" alt="namxely hero banner" width="100%" />
+  <img src="img/hero.webp" alt="namxely intro banner" width="100%" />
 
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&pause=1000&color=F7F7F7&center=true&vCenter=true&width=640&lines=Hi+there+%F0%9F%91%8B%2C+I%27m+Nam+(namxely);Focusing+on+AI%2FML%2C+Computer+Vision+%26+AI+Agents;CS+%40+IUH+%C2%B7+Turning+ML+Models+into+Full-Stack+Products" />

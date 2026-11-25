@@ -1,17 +1,6 @@
 <div align="center">
   <img src="img/hero.webp" alt="namxely intro banner" width="100%" />
-</div>
 
-<div align="center">
-<details>
-  <summary>🔊 <b>Watch Intro with Sound (HD MP4)</b></summary>
-
-https://github.com/user-attachments/assets/b0bfd9f4-343b-479f-b534-59fddec058ce
-
-</details>
-</div>
-
-<div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&pause=1000&color=F7F7F7&center=true&vCenter=true&width=640&lines=Hi+there+%F0%9F%91%8B%2C+I%27m+Nam+(namxely);Focusing+on+AI%2FML%2C+Computer+Vision+%26+AI+Agents;CS+%40+IUH+%C2%B7+Turning+ML+Models+into+Full-Stack+Products" />
     <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&pause=1000&color=24292F&center=true&vCenter=true&width=640&lines=Hi+there+%F0%9F%91%8B%2C+I%27m+Nam+(namxely);Focusing+on+AI%2FML%2C+Computer+Vision+%26+AI+Agents;CS+%40+IUH+%C2%B7+Turning+ML+Models+into+Full-Stack+Products" alt="Typing SVG" />
